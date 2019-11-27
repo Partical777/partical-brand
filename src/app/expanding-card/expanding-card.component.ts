@@ -38,22 +38,17 @@ export class ExpandingCardComponent  {
     - a resize event listener on the window
   */
   attachListeners() {
-    for (var i = 0; i < this.nCards; i++) {
-      this.attachListenerToCard(i);
-    }
     this.closeContent.addEventListener('click', this.onCloseClick);
     window.addEventListener('resize', this.resize);
   }
 
-  attachListenerToCard(i) {
-    this.cards[i].addEventListener('click', function(e) {
-      var card = this.getCardElement(e.target);
-      this.onCardClick(card, i);
-    })
+  cardClicked(e) {
+    let card = this.getCardElement(e.target);
+    this.onCardClick(card);
   }
 
   /* When a card is clicked */
-  onCardClick(card, i) {
+  onCardClick(card) {
     // set the current card
     this.currentCard = card;
     // add the 'clicked' class to the card, so it animates out
