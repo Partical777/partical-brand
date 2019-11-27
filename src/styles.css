@@ -1,4 +1,7 @@
 /* Add application styles & imports to this file! */
 body {
   margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+  background: #121212;
 }

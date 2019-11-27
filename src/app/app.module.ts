@@ -3,10 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { ExpandingCardComponent } from './expanding-card/expanding-card.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, ExpandingCardComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

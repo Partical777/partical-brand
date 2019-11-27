@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 .container {
-  font-family: 'Abril Fatface', cursive;
-  color: white;
-  background: #121212;
   overflow: hidden;
 }
 
